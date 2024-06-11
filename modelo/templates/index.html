@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+  <h1>Modelo Home</h1>
+  <p>
+    Bienvenidos al Trabajo de Fin de Grado de
+    <em>Carolina Monedero Juzgado</em>!
+  </p>
+  <h2>Dynamic content</h2>
+  <p>Probando el contexto</p>
+  <ul>
+    <li><strong>Prueba:</strong> {{ prueba }}</li>
+    <li><strong>Petición:</strong>{{ request }}</li>
+    <li><strong>Modelo:</strong>{{ modelo }}</li>
+  </ul>
+{% endblock %}
